@@ -30,18 +30,18 @@ const id= useParams()
   
   return (
     <div className="container mx-auto my-24 w-full">
-      <section className="container  flex justify-between  md:mt-28 items-center ml-10 ">
+      <section className="container  flex justify-between  md:mt-28 items-center pl-10 ">
         <div className="">
           <Link to="/question">
-            <button className="bg-customBlue text-orange-400 hover:bg-customBlight rounded-md font-bold text-2xl px-10 py-2 mt-3">
+            <button className="bg-customBlue text-orange-400 hover:bg-customBlight rounded-md font-bold sm:text-2xl text-sm md:px-10 px-3 py-2 mt-3 mr-4">
               Ask Questions
             </button>
           </Link>
         </div>
 
-        <div className="text-2xl text-green-500 font-bold mr-12">
+        <div className="sm:text-2xl text-sm text-green-500 font-bold  mr-16">
           Wellcome:{" "}
-          <small className="text-3xl text-green-700">
+          <small className="sm:text-3xl text-xl text-green-700">
             {" "}
             {userData?.data?.username}
           </small>{" "}

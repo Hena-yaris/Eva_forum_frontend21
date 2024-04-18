@@ -144,8 +144,8 @@ const Answer = () => {
   return (
     <div className="answer">
       <div className="mt-28 container mx-auto ">
-        <section className="border-b border-b-gray-400 mb-10 mx-28">
-          <h2 className="mb-2 text-4xl font-serif text-orange-500">
+        <section className="border-b border-b-gray-400 mb-10 md:mx-28 mx-8">
+          <h2 className="mb-2 sm:text-4xl text-3xl font-serif text-orange-500">
             Questions
           </h2>
           <section className="" key="id">
@@ -160,7 +160,7 @@ const Answer = () => {
                         <div className="text-2xl text-orange-200 mt-2 font-semibold">
                           {question.title}?
                         </div>
-                        <div className="font-mono text-orange-300 text-xl mt-2">
+                        <div className="font-mono text-orange-300 sm:text-xl text-sm mt-2">
                           {question.description}
                         </div>
                       </div>
@@ -182,8 +182,8 @@ const Answer = () => {
           </section>
         </section>
 
-        <section className="border-b border-gray-400 mb-5 mx-28">
-          <h2 className="text-green-400 font-serif text-4xl border-b border-gray-400 mb-5 ">
+        <section className="border-b border-gray-400 mb-5 md:mx-28 mx-8">
+          <h2 className="text-green-400 font-serif sm:text-4xl text-2xl border-b border-gray-400 mb-5 ">
             {loading
               ? "Answer From The Community"
               : displayMessage
@@ -226,8 +226,8 @@ const Answer = () => {
           </div>
         </section>
 
-        <section className="mx-28">
-          <h2 className="mb-3 text-2xl text-yellow-500 font-mono">
+        <section className="md:mx-28 mx-8">
+          <h2 className="mb-3 sm:text-2xl text-xl text-yellow-500 font-mono">
             Your Answer Please.😌
           </h2>
           <form onSubmit={handleEvent} className="mb-10">
@@ -242,10 +242,10 @@ const Answer = () => {
             {errors.answer && (
               <div className="error h-[60px]">{errors.answer}</div>
             )}
-            <div className="sm:flex items-center sm:justify-around">
+            <div className="flex items-center justify-around">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400  sm:py-4 sm:px-10 py-2 px-2 my-2 rounded-lg text-white font-serif text-xl"
+                className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400  md:py-4 md:px-10 py-2 px-2 my-2 rounded-lg text-white font-serif md:text-xl text-sm"
               >
                 {loading ? (
                   <CircleLoader color="yellow" size={22} />
@@ -256,7 +256,7 @@ const Answer = () => {
               <Link to={"/"}>
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-orange-600 to-yellow-500 hover:from-yellow-500 hover:to-orange-600 sm:py-4 sm:px-10 py-2 px-3 my-2 rounded-lg text-white font-serif text-xl ml-2"
+                  className="bg-gradient-to-r from-orange-600 to-yellow-500 hover:from-yellow-500 hover:to-orange-600 sm:py-4 md:px-10 py-2 px-3 my-2 rounded-lg text-white font-serif md:text-xl text-sm ml-2"
                 >
                   Back to DashBoard
                 </button>

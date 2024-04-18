@@ -80,7 +80,7 @@ const Login = () => {
             <div className="text-xl  pb-3 pt-10 join">
               Login to your Account
             </div>
-            <p className="text-center login_have">
+            <p className="text-center login_have md:text-xl text-sm">
               Don't have an account?{" "}
               <Link to="/signup" className="text-red-400 login_create">
                 create a new account

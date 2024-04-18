@@ -155,7 +155,7 @@ const Question = () => {
           <div className="flex items-center justify-around">
             <button
               type="submit"
-              className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400  sm:py-4 sm:px-10 py-2 px-3 my-2 rounded-lg text-white font-serif text-xl"
+              className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400  md:py-4 md:px-10 py-2 px-2 my-2 rounded-lg text-white font-serif md:text-xl text-sm"
             >
               {loading ? (
                 <CircleLoader color="yellow" size={22} />
@@ -166,7 +166,7 @@ const Question = () => {
             <Link to={"/"}>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-orange-600 to-yellow-500 hover:from-yellow-500 hover:to-orange-600 sm:py-4 sm:px-10 py-2 px-3 my-2 rounded-lg text-white font-serif text-xl"
+                className="bg-gradient-to-r from-orange-600 to-yellow-500 hover:from-yellow-500 hover:to-orange-600 sm:py-4 md:px-10 py-2 px-3 my-2 rounded-lg text-white font-serif md:text-xl text-sm ml-2"
               >
                 Back to DashBoard
               </button>
